@@ -260,6 +260,7 @@ img {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 
 .footer-text {
@@ -314,8 +315,7 @@ img {
     margin: 0;
     justify-content: center;
     gap: 16px;
-    /* width: 208px;
-    height: 40px; */
+    padding-top: 16px;
 }
 
 .social-items-footer {
@@ -426,30 +426,6 @@ img {
     display: flex;
 }
 
-/* .point-text::before {
-    content: '';
-    display: block;
-    height: 112px;
-    background-color: #F4F4FD;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
-/* .icon-antenna::before {
-    background-image: url(../images/antenna-one.svg);
-}
-
-.icon-clock::before {
-    background-image: url(../images/clock-two.svg);
-}
-
-.icon-diagram::before {
-    background-image: url(../images/diagram-three.svg);
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/astronaut-four.svg);
-} */
 
 .point-text:not(:last-child) {
     margin-right: 24px;
@@ -627,7 +603,6 @@ padding-bottom: 120px;
 
 
 .social-link {
-    /* padding: 0; */
     display: flex;
     width: 100%;
     height: 100%; 
@@ -636,12 +611,6 @@ padding-bottom: 120px;
     align-items: center;
 
 }
-
-/* .social-link-icon {
-    fill: currentColor;
-    justify-content: center;
-    align-items: center;
-} */
 
 
 .customers {
@@ -677,7 +646,7 @@ padding-bottom: 120px;
     height: 88px;
     justify-content: center;
     gap: 24px;
-    /* background-color: #E5E5E5; */
+    padding-right: 30px;
 
 
     width: 1128px;
@@ -685,26 +654,11 @@ padding-bottom: 120px;
 
 .customers-item {
     background-color: #E5E5E5;
-    border: 1px solid #8E8F99;
     border-radius: 4px;
     width: 168px;
     height: 88px;
-    
-    /* padding-left: 65px;
-    padding-right: 63px;
-    padding-top: 23px;
-    padding-bottom: 18px; */
 }
 
-/* .customers-item:hover {
-    background-color: #404BBF;
-} */
-
-.customers-icon:hover {
-    background-color: #404BBF;
-    /* border: 1px solid #404BBF;
-    border-radius: 4px; */
-}
 
 .customers-link {
     display: flex;
@@ -715,4 +669,28 @@ padding-bottom: 120px;
     background-color: #ffffff;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    fill: #8E8F99;
+    width: 100%;
+    height: 100%;
 }
+
+.customers-icon {
+    fill: #8E8F99;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+    fill: #404BBF;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border-color: #404BBF;
+}
+
+
+.customers-link:is(:hover, :focus) .customers-icon {
+    fill: #404BBF;
+}
+
+
