@@ -222,6 +222,10 @@ img {
     padding-right: 16px;
 }
 
+.card-bottom:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -252,6 +256,7 @@ img {
 }
 
 .container-footer {
+    display: flex;
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
@@ -283,6 +288,62 @@ img {
 .footer-logo span {
     color: var(--bg-btn-color);
 }
+
+.social-media-footer-container {
+
+    padding-left: 120px;
+}
+
+.social-media-footer-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 16px;
+}
+
+.social-media-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 16px;
+    /* width: 208px;
+    height: 40px; */
+}
+
+.social-items-footer {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-items-footer:hover,
+.social-items-footer:focus {
+    background-color: #31D0AA;
+}
+
+.link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 /* Studio Page */
 
@@ -398,6 +459,19 @@ img {
     width: calc((100% - 72px) / 4);
 }
 
+.thumb {
+    display: flex;
+    background-color: #F4F4FD;
+    margin-bottom: 8px;
+    justify-content: center;
+
+}
+
+.advantages-icon {
+    height: 112px;
+    
+    
+}
 
 .advantages-title {
 
@@ -526,12 +600,14 @@ padding-bottom: 120px;
     text-align: center;
 }
 
+
 .social-media {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 0;
     margin-top: 8px;
-    justify-content: center;
-    text-align: center; 
+    justify-content: center; 
     gap: 24px;
 }
 
@@ -542,42 +618,101 @@ padding-bottom: 120px;
     height: 40px;
     background: #4D5AE5;
     border-radius: 50%;
-
-
 }
 
-.social-link {
-    padding: 0;
-    width: 100%;
-    height: 100%; 
-    justify-content: center; 
-    color: #F4F4FD;
-    background-color: #4D5AE5;
-
-}
-
-.social-link-icon {
-    fill: currentColor;
-}
-
-
-.social-items:hover {
+.social-items:hover,
+.social-items:focus {
     background-color: #404BBF;
 }
 
-/* .link:hover {
-    background-color: #4D5AE5;
+
+.social-link {
+    /* padding: 0; */
+    display: flex;
+    width: 100%;
+    height: 100%; 
     border-radius: 50%;
+    justify-content: center; 
+    align-items: center;
+
 }
 
-.link-icon {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
+/* .social-link-icon {
     fill: currentColor;
+    justify-content: center;
+    align-items: center;
+} */
 
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.link-icon:hover {
-    fill: #F4F4FD;
-} 
+.customers-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customers-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 72px;
+    
+    font-size: 36px;
+    line-height: 1.1px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+
+.customers-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 168px;
+    height: 88px;
+    justify-content: center;
+    gap: 24px;
+    /* background-color: #E5E5E5; */
+
+
+    width: 1128px;
+}
+
+.customers-item {
+    background-color: #E5E5E5;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    
+    /* padding-left: 65px;
+    padding-right: 63px;
+    padding-top: 23px;
+    padding-bottom: 18px; */
+}
+
+/* .customers-item:hover {
+    background-color: #404BBF;
+} */
+
+.customers-icon:hover {
+    background-color: #404BBF;
+    /* border: 1px solid #404BBF;
+    border-radius: 4px; */
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    background-color: #ffffff;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
